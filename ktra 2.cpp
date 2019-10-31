@@ -8,11 +8,11 @@ int main(){
 	scanf("%f",&rate);
 	printf("enter no of year:\n");
 	scanf("%d",&year);
-	float interest,sum,inter;
-	interest=(float)rate/100;
+	float interest,sum;
+	sum=(float)cap;
 	for(int i=1; i<=year;i++){
+		interest = sum*rate/100;
 		
-		interest = cap*rate;
 		sum += interest;
 		printf(" year %d    interest: %f    sum: %f\n",i,interest,sum);
 	}
